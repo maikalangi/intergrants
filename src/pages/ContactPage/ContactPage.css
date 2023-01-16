@@ -1,20 +1,15 @@
 .contact-main-div {
-    /* display: grid; */
+    display: block;
     justify-content: space-around;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 150vh;
-    width: 100vw
-}
-
-.contact-main-div:first-child {
-
+    /* height: 150vh; */
+    /* width: 100vw */
 }
 
 #manager-div {
     margin: 0px 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #contact-label{
@@ -31,8 +26,16 @@
     border: rgb(0, 105, 252) 8px;
 }
 
-#design-div > div > img {
-    border: rgb(0, 105, 252) 8px;
+@media (max-width: 500px) {
+    #design-div {
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-img {
+    border: 3px solid #1469bd;
     border-radius: 100%;
 }
 
@@ -44,8 +47,12 @@
     padding-bottom: 30px;
 }
 
-#engineer-div > div > img {
-    border-radius: 100%;
+@media (max-width: 500px) {
+    #engineer-div {
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 #data-div{
@@ -56,10 +63,14 @@
     padding-bottom: 30px;
 }
 
-#manager-div{
-    padding-top: 30px;
-    padding-bottom: 30px;
+@media (max-width: 500px) {
+    #data-div {
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 
 
 

@@ -15,7 +15,7 @@ const NewFooter = () => {
         <Link className='resourcesBtn' style={{ marginRight: "35px" }} to="/contact-us">Contact</Link>
       </div>
 
-      <div>
+      <div className='links'>
         <Link to=""><FontAwesomeIcon style={{width: "25px", marginRight: "35px"}} icon={faLinkedinIn} size="2x" className="highlight" /></Link>
         <Link to=""><FontAwesomeIcon style={{width: "25px", marginRight: "35px"}} icon={faTwitter} size="2x" className="highlight" /></Link>
         <Link to=""><FontAwesomeIcon style={{width: "25px", marginRight: "35px"}} icon={faFacebook} size="2x" className="highlight" /></Link>
